@@ -1,4 +1,4 @@
-#Name_off_pattient	2.3608007	GainMosaic	3	22268033	32989953	10721.927	9647	1111	p24.3	p22.3	5	2	UBE2E2-AS1, UBE2E2, UBE2E1-AS1, UBE2E1, NKIRAS1, UBE2E2 (602163), UBE2E1 (602916)
+
 
 
 from docx import Document  #Install python-docx in PyCharm (I write to and run in it)
@@ -9,13 +9,20 @@ blue = RGBColor(192, 192, 192)
 from builtins import print
 import re
 
-inf = open("DataForComparison.bed").read() # DataForComparison.bed This file contains the coordinates of unreal patients. These are coordinates from the DGV base. They cannot be used. With them we compare the coordinates of the current investigated. The base should be supplemented by you independently !!!!
+inf = open("DataForComparison.bed").read()
+# DataForComparison.bed This file contains the coordinates of unreal patients.\
+# These are coordinates from the DGV base. They cannot be used.\
+# With them we compare the coordinates of the current investigated. The base should be supplemented by you independently.
+
 print("Enter the total number of CNVs from the CHAS program")
 m = int(input())
 print("Copy", m, "CNV from CHAS")
-#p 15 columns from the program, ", "one line example:",
-# "1:Name_off_pattient	2:2.3608007	3:GainMosaic	4:3	5:22268030	6:32989956	7:10721.927	8:9647	9:1111	10:p24.3	11:p22.3	12:5	13:2	14:UBE2E2-AS1, UBE2E2, UBE2E1-AS1, UBE2E1, NKIRAS1, 15:UBE2E2 (602163), UBE2E1 (602916)
-# 1:PatientName 2:CN_State 3:Type 4:Chromosome 5:Min 6:Max 7:Size 8:M.Count 9:M.M.Dis 10:Cyto.Start 11:Cyto.End 12:Gene.Count 13:Omim.G.Count 14:Genes 15:Omim.Genes
+
+# 1:Name_off_pattient	2:2.3608007	3:GainMosaic	4:3	5:22268030	6:32989956	7:10721.927	8:9647	9:1111 \
+# 10:p24.3	11:p22.3	12:5	13:2	14:UBE2E2-AS1, UBE2E2, UBE2E1-AS1, UBE2E1, NKIRAS1, 15:UBE2E2 (602163), UBE2E1 (602916)
+
+# 1:PatientName 2:CN_State 3:Type 4:Chromosome 5:Min 6:Max 7:Size 8:M.Count 9:M.M.Dis 10:Cyto.Start \
+# 11:Cyto.End 12:Gene.Count 13:Omim.G.Count 14:Genes 15:Omim.Genes
 
 CNV_without_genes = 0 #+
 CNV_coincidence_in_two_coordinates = 0 #+
