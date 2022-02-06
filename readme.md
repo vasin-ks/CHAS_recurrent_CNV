@@ -22,7 +22,7 @@ This script aims to identify unique and non-unique CNVs in subjects.
    1:PatientName 2:CN_State 3:Type 4:Chromosome 5:Min 6:Max 7:Size 8:M.Count 9:M.M.Dis 10:Cyto.Start 11:Cyto.End 12:Gene.Count 13:Omim.G.Count 14:Genes 15:Omim.Genes
   Correct order matters!
 
-4-The script will return the results, and each CNV will have a designation for its uniqueness. A short entry will also be generated:
+5-The script will return the results, and each CNV will have a designation for its uniqueness. A short entry will also be generated:
   Xp22.33(1511714_1569114)x3.11q11(55609009_55653792)x1.
   Unfortunately for the CNV mosaicism, the short record is generated incorrectly. Be careful about this.
   Can't wright Xp22.33(1511714_1569114)2~3
