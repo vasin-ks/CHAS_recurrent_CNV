@@ -18,8 +18,8 @@ This script aims to identify unique and non-unique CNVs in subjects.
 
 4-Next, you will copy all the data for this CNV Columns from the CHAS program should be copied 15.
 
-  # 1:Name_off_pattient	2:2.3608007	3:GainMosaic	4:3	5:22268030	6:32989956	7:10721.927	8:9647	9:1111	10:p24.3	11:p22.3	12:5	13:2	14:UBE2E2-AS1, UBE2E2, UBE2E1-AS1, UBE2E1, NKIRAS1, 15:UBE2E2 (602163), UBE2E1 (602916)")
-  # 1:PatientName 2:CN_State 3:Type 4:Chromosome 5:Min 6:Max 7:Size 8:M.Count 9:M.M.Dis 10:Cyto.Start 11:Cyto.End 12:Gene.Count 13:Omim.G.Count 14:Genes 15:Omim.Genes
+   1:Name_off_pattient	2:2.3608007	3:GainMosaic	4:3	5:22268030	6:32989956	7:10721.927	8:9647	9:1111	10:p24.3	11:p22.3	12:5	13:2	14:UBE2E2-AS1, UBE2E2, UBE2E1-AS1, UBE2E1, NKIRAS1, 15:UBE2E2 (602163), UBE2E1 (602916)")
+   1:PatientName 2:CN_State 3:Type 4:Chromosome 5:Min 6:Max 7:Size 8:M.Count 9:M.M.Dis 10:Cyto.Start 11:Cyto.End 12:Gene.Count 13:Omim.G.Count 14:Genes 15:Omim.Genes
   Correct order matters!
 
 4-The script will return the results, and each CNV will have a designation for its uniqueness. A short entry will also be generated:
